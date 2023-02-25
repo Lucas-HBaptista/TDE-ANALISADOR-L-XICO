@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> TDE ANALISADOR LÉXICO</title>
+    <link rel="stylesheet" href="styles/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">    
+</head>
+<body>
+
+    <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>    
+        </div>
+        <a class="navbar-brand">ANALISADOR LÉXICO</a>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+               
+            </ul>
+        </div>
+    </nav>  
+
+    <div class="container">
+        <!-- Entradas -->
+        <div id="entradas" class="row">
+            <div class="col-md-6">
+                <input id="token" class="form-control" type="text" placeholder="Insira um ou mais palavras separados por espaço e pressione ENTER ">
+            </div>
+            <div class="col-md-6">
+                <input id="palavra" class="form-control" type="text" placeholder="Digite uma palavra e pressione ESPAÇO para validá-la ^-^"onInput="maquina_de_estados(this);">
+            </div>
+        </div>
+        <!-- Palavras do alfabeto -->
+        <div class="row">
+            <div id="div-alfabeto" class="col-md-12 text-center">
+                <div class="card">
+                    <div class="card-header" style="margin-bottom: 10px;">
+                        <strong>Tabela de Estados</strong>
+                    </div>
+                    <div class="card-body">
+                        <p id="alfabeto" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tabela -->
+        <div class="row">
+            <div class="col-md-12">
+                <table id="tabela" class="table table-bordered"></table> 
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="styles/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="scripts/bootbox/bootbox.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

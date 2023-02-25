@@ -1,0 +1,53 @@
+#entradas {
+    margin: 15px;
+    
+}
+
+#div-alfabeto {
+    margin-bottom: 15px;
+    background-color: #a8c5f7;
+    padding: 5px;
+}
+
+.palavras {
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.palavras i {
+    margin-left: 5px;
+}
+
+#alfabeto {
+
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.estado-atual {
+    background-color: green;
+}
+
+.proximo-estado {
+    background-color: lightgreen;
+}
+
+.navbar-brand
+{
+    background-color: rgb(95, 148, 247);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
+.acoes a i{
+    margin-right: 5px;
+}
